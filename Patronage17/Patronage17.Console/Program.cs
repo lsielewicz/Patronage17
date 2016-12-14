@@ -11,19 +11,13 @@ class Program
     {
         if (!args.Any())
         {
-            Console.WriteLine("Cannot process command because of missing mandatory parameter: DirectoryPath");
-            Console.WriteLine("\n[Press any key to exit]\n");
-            Console.ReadKey();
-            return;
+            ExitApplication("Cannot process command because of missing mandatory parameter: DirectoryPath");
         }
 
         string directoryPath = args.First();
         if (directoryPath.Length > 260)
         {
-            Console.WriteLine("Path is too long");
-            Console.WriteLine("\n[Press any key to exit]\n");
-            Console.ReadKey();
-            return;
+            ExitApplication("Path is too long");
         }
 
         if (Directory.Exists(directoryPath))
@@ -33,7 +27,6 @@ class Program
             try
             {
                 files = FilesIoHelper.Instance.GetFilesFromDirectory(directoryPath, SearchOption.TopDirectoryOnly);
-                throw new SecurityException();
             }
             catch (ArgumentNullException ex){ HandleUIException("There is no given argument", ex.Message, ex.StackTrace); }
             catch (SecurityException ex) { HandleUIException("There is a security issue that prevents from further executing", ex.Message, ex.StackTrace); }
@@ -74,6 +67,14 @@ class Program
         {
             Console.WriteLine($"Stack trace:\n{stackTrace}");
         }
+        Console.WriteLine("\n[Press any key to exit]\n");
+        Console.ReadKey();
+        Environment.Exit(1);
+    }
+
+    private static void ExitApplication(string msg)
+    {
+        Console.WriteLine(msg);
         Console.WriteLine("\n[Press any key to exit]\n");
         Console.ReadKey();
         Environment.Exit(1);
