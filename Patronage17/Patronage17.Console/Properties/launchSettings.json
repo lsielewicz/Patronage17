@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Patronage17.Console": {
+      "commandName": "Project",
+      "commandLineArgs": "F:\\AnalyzerDatabase"
+    }
+  }
+}
