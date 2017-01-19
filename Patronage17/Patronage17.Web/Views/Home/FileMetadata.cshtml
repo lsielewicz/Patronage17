@@ -1,0 +1,29 @@
+﻿@model Patronage17.Engine.Interfaces.IFileInfo
+@{
+    <table>
+        <thead>
+            <tr>
+                <th>Attribute</th>
+                <th>Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>File name</td>
+                <td>@Model.Name</td>
+            </tr>
+            <tr>
+                <td>Extension</td>
+                <td>@Model.Extension</td>
+            </tr>
+            <tr>
+                <td>Last write time</td>
+                <td>@Model.LastWriteTime</td>
+            </tr>
+            <tr>
+                <td>Creation time</td>
+                <td>@Model.CreationTime</td>
+            </tr>
+        </tbody>
+    </table>
+}
