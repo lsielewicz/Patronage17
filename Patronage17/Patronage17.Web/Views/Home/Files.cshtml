@@ -1,0 +1,25 @@
+﻿@model Patronage17.Web.Models.HomeViewModels.FilesViewModel
+
+@{
+    <h3>Directory: @Model.Directory</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Files</th>
+            </tr>
+        </thead>
+        <tbody>
+           @foreach (var file in Model.Files)
+           {
+                <tr>
+                    <td>
+                        <a href="~/home/filemetadata/@file.Value.Name">@file.Key</a>
+                    </td>
+                </tr>
+           }
+        </tbody>
+    </table>
+
+
+}

@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Patronage17.Engine", "Patro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patronage17.Tests", "Patronage17.Tests\Patronage17.Tests.csproj", "{2C959E7B-24B1-4F47-B20C-0AF7AA545A16}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Patronage17.Web", "Patronage17.Web\Patronage17.Web.csproj", "{02A10365-16F8-473E-9A3D-CF39FCD41106}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,18 @@ Global
 		{2C959E7B-24B1-4F47-B20C-0AF7AA545A16}.Release|x64.Build.0 = Release|x64
 		{2C959E7B-24B1-4F47-B20C-0AF7AA545A16}.Release|x86.ActiveCfg = Release|x86
 		{2C959E7B-24B1-4F47-B20C-0AF7AA545A16}.Release|x86.Build.0 = Release|x86
+		{02A10365-16F8-473E-9A3D-CF39FCD41106}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02A10365-16F8-473E-9A3D-CF39FCD41106}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02A10365-16F8-473E-9A3D-CF39FCD41106}.Debug|x64.ActiveCfg = Debug|x64
+		{02A10365-16F8-473E-9A3D-CF39FCD41106}.Debug|x64.Build.0 = Debug|x64
+		{02A10365-16F8-473E-9A3D-CF39FCD41106}.Debug|x86.ActiveCfg = Debug|x86
+		{02A10365-16F8-473E-9A3D-CF39FCD41106}.Debug|x86.Build.0 = Debug|x86
+		{02A10365-16F8-473E-9A3D-CF39FCD41106}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02A10365-16F8-473E-9A3D-CF39FCD41106}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02A10365-16F8-473E-9A3D-CF39FCD41106}.Release|x64.ActiveCfg = Release|x64
+		{02A10365-16F8-473E-9A3D-CF39FCD41106}.Release|x64.Build.0 = Release|x64
+		{02A10365-16F8-473E-9A3D-CF39FCD41106}.Release|x86.ActiveCfg = Release|x86
+		{02A10365-16F8-473E-9A3D-CF39FCD41106}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
